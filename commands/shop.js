@@ -205,52 +205,28 @@ ${discountText || price + " מטבעות"}
 
 
 
-        // מקסימום 8 כפתורים בשורה אחת
+        // מקסימום 8 כפתורים בשורה אחת// מקסימום 5 כפתורים בכל שורה
 buttons.push(
-
     new ButtonBuilder()
-
-    .setCustomId(
-        "check_balance"
-    )
-
-    .setLabel(
-        "💰 בדיקת יתרה"
-    )
-
-    .setStyle(
-        ButtonStyle.Primary
-    )
-
+        .setCustomId("check_balance")
+        .setLabel("💰 בדיקת יתרה")
+        .setStyle(ButtonStyle.Primary)
 );
-        const rows = [];
 
+const rows = [];
 
-
-        for (
-            let i = 0;
-            i < buttons.length;
-            i += 8
-        ) {
-
-
-            rows.push(
-
-                new ActionRowBuilder()
-
-                .addComponents(
-
-                    buttons.slice(
-                        i,
-                        i + 8
-                    )
-
-                )
-
-            );
-
-
-        }
+for (
+    let i = 0;
+    i < buttons.length;
+    i += 5
+) {
+    rows.push(
+        new ActionRowBuilder()
+            .addComponents(
+                buttons.slice(i, i + 5)
+            )
+    );
+}
 
 
 
