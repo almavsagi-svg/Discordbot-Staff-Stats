@@ -1,0 +1,27 @@
+{
+  "language": {
+    "name": "Arabic",
+    "selected": "تم اختيار اللغة العربية."
+  },
+  "help": {
+    "title": "مساعدة StaffStat",
+    "description": "اختر فئة أدناه لعرض الأوامر المتاحة."
+  },
+  "commands": {
+    "ban": {
+      "description": "حظر مستخدم من الخادم."
+    },
+    "kick": {
+      "description": "طرد مستخدم من الخادم."
+    },
+    "warn": {
+      "description": "تحذير مستخدم."
+    },
+    "warnings": {
+      "description": "عرض تحذيرات مستخدم."
+    },
+    "clear": {
+      "description": "حذف الرسائل من القناة."
+    }
+  }
+}

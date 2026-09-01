@@ -1,0 +1,27 @@
+{
+  "language": {
+    "name": "Hebrew",
+    "selected": "השפה העברית נבחרה."
+  },
+  "help": {
+    "title": "עזרה של StaffStat",
+    "description": "בחר קטגוריה למטה כדי לראות את הפקודות הזמינות."
+  },
+  "commands": {
+    "ban": {
+      "description": "חסימת משתמש מהשרת."
+    },
+    "kick": {
+      "description": "הוצאת משתמש מהשרת."
+    },
+    "warn": {
+      "description": "מתן אזהרה למשתמש."
+    },
+    "warnings": {
+      "description": "הצגת האזהרות של משתמש."
+    },
+    "clear": {
+      "description": "מחיקת הודעות מערוץ."
+    }
+  }
+}

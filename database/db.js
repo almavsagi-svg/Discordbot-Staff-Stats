@@ -284,6 +284,13 @@ CREATE TABLE IF NOT EXISTS temp_bans (
     expires_at INTEGER NOT NULL
 )
 `).run();
+// Server language settings
+db.prepare(`
+    CREATE TABLE IF NOT EXISTS server_languages (
+        guild_id TEXT PRIMARY KEY,
+        language TEXT NOT NULL DEFAULT 'en'
+    )
+`).run();
 
 console.log("✅ Database connected");
 

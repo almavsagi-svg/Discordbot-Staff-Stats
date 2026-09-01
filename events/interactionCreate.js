@@ -57,6 +57,41 @@ ${interaction.values.length}
 
                 console.log("BUTTON:", interaction.customId);
                 // ==========================
+// Language selection
+// ==========================
+
+if (interaction.customId.startsWith("language_")) {
+
+    const language = interaction.customId.split("_")[1];
+
+    const languageNames = {
+        en: "🇺🇸 English",
+        he: "🇮🇱 Hebrew",
+        ar: "🇸🇦 Arabic"
+    };
+
+    if (!["en", "he", "ar"].includes(language)) {
+        return interaction.reply({
+            content: "❌ Invalid language.",
+            ephemeral: true
+        });
+    }
+
+    const { setLanguage } = require("../languageManager");
+
+    setLanguage(
+        interaction.guild.id,
+        language
+    );
+
+    return interaction.update({
+        content:
+            `✅ StaffStat language changed to **${languageNames[language]}**.`,
+        embeds: [],
+        components: []
+    });
+}
+                // ==========================
 // הצטרפות להגרלה
 // ==========================
 

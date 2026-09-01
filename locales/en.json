@@ -1,0 +1,27 @@
+{
+  "language": {
+    "name": "English",
+    "selected": "English has been selected."
+  },
+  "help": {
+    "title": "StaffStat Help",
+    "description": "Select a category below to view available commands."
+  },
+  "commands": {
+    "ban": {
+      "description": "Ban a user from the server."
+    },
+    "kick": {
+      "description": "Kick a user from the server."
+    },
+    "warn": {
+      "description": "Warn a user."
+    },
+    "warnings": {
+      "description": "View a user's warnings."
+    },
+    "clear": {
+      "description": "Delete messages from a channel."
+    }
+  }
+}
